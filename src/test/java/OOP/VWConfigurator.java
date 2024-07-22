@@ -4,17 +4,19 @@ import java.util.List;
 
 public class VWConfigurator extends MasinaConfigurator {
 
-    public String linieDeEchipare;
-    public String motor;
-    public String vopsea;
-    public String roti;
-    public String tapiterie;
-    public List<String> dotariOptionale;
+    private String linieDeEchipare;
+    private String motor;
+    private String vopsea;
+    private String roti;
+    private String tapiterie;
+    private List<String> dotariOptionale;
+    private Double pretStandard;
+    private Double pretFinal;
 
 
-    public VWConfigurator(String marca, String model, Integer an, Double pretStandard, String linieDeEchipare, String motor, String vopsea, String roti,
+    public VWConfigurator(String marca, String model, Integer an, String linieDeEchipare, String motor, String vopsea, String roti,
                           String tapiterie, List<String> dotariOptionale) {
-        super(marca, model, an, pretStandard);
+        super(marca, model, an);
         this.linieDeEchipare = linieDeEchipare;
         this.motor = motor;
         this.vopsea = vopsea;
@@ -28,10 +30,66 @@ public class VWConfigurator extends MasinaConfigurator {
         System.out.println("Motorul masinii este: " + motor);
         System.out.println("Vopseaua masinii este : " + vopsea);
         System.out.println("Rotile masinii sunt : " + roti);
-        System.out.println("Tapiteria masinii este : " + linieDeEchipare);
+        System.out.println("Tapiteria masinii este : " + tapiterie);
         System.out.println("Dotarile optionale sunt: ");
         for (Integer index = 0; index < dotariOptionale.size(); index++) {
             System.out.println(dotariOptionale.get(index));
         }
+    }
+
+    public String getLinieDeEchipare() {
+        return linieDeEchipare;
+    }
+
+    public String getMotor() {
+        return motor;
+    }
+
+    public String getVopsea() {
+        return vopsea;
+    }
+
+    public String getRoti() {
+        return roti;
+    }
+
+    public String getTapiterie() {
+        return tapiterie;
+    }
+
+    public List<String> getDotariOptionale() {
+        return dotariOptionale;
+    }
+
+    public Double getPretStandard() {
+        return pretStandard;
+    }
+
+    public Double getPretFinal() {
+        return pretFinal;
+    }
+
+    public void setLinieDeEchipare(String linieDeEchipare) {
+        this.linieDeEchipare = linieDeEchipare;
+    }
+
+    public void setMotor(String motor) {
+        this.motor = motor;
+    }
+
+    public void setVopsea(String vopsea) {
+        this.vopsea = vopsea;
+    }
+
+    public void setRoti(String roti) {
+        this.roti = roti;
+    }
+
+    public void setTapiterie(String tapiterie) {
+        this.tapiterie = tapiterie;
+    }
+
+    public void setDotariOptionale(List<String> dotariOptionale) {
+        this.dotariOptionale = dotariOptionale;
     }
 }
