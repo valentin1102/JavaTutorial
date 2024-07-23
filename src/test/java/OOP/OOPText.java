@@ -16,13 +16,17 @@ public class OOPText {
         DaciaConfigurator Logan = new DaciaConfigurator("Dacia", "Logan", 2004, "Essential", "TCE 90", "Grey", "Standard",
                 "Standard", EchipamenteLogan, AccessoriiLogan);
         Logan.infoDacia();
+        Logan.pornesteMotor();
+        Logan.promotieDacia();
+        Logan.promotieDacia("ticket");
+        Logan.promotieDacia(25);
 
-        System.out.println("========================VW=========================");
-
-        List<String> dotariOptionalePolo = Arrays.asList("Trapa de sticla", "Alarma Antifurt", "Keyless Access");
-        VWConfigurator Polo = new VWConfigurator("VW", "Polo", 2004, "Automata","Advanced", "Polo Life 3.1",
-                "Rosie", "Metalice",  dotariOptionalePolo);
-        Polo.infoVW();
+//        System.out.println("========================VW=========================");
+//
+//        List<String> dotariOptionalePolo = Arrays.asList("Trapa de sticla", "Alarma Antifurt", "Keyless Access");
+//        VWConfigurator Polo = new VWConfigurator("VW", "Polo", 2004, "Automata","Advanced", "Polo Life 3.1",
+//                "Rosie", "Metalice",  dotariOptionalePolo);
+//        Polo.infoVW();
     }
 
 }

@@ -47,6 +47,16 @@ public class DaciaConfigurator extends MasinaConfigurator {
         calculPretFinal();
     }
 
+    //APLICAM POLIMORFISM DINAMIC
+
+    public void pornesteMotor(){
+        System.out.println("Masinile Dacia pornesc de la buton");
+    }
+
+    public void deschideGeam(){
+        System.out.println("Geamurile la masinile Dacia se deschid electric");
+    }
+
     //trebuie sa determinam pretul standard in functie de modelul masinii (dacia vs vw)
 
     public void calculPretStandard(){

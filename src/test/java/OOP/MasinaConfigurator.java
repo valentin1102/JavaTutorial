@@ -27,10 +27,43 @@ public class MasinaConfigurator {
 
     //Incapsulare = conceptul prin care putem sa setam anumite restrictii de vizibilitate pentru proprietati/metode
 
+    // POLIMORFISM = CONCEPTUL PRIN CARE O METODA POATE AVEA IMPLEMENTARI DIFERITE
+    // POLIMORFISMUL POATE SA FIE DE DOUA FELURI: DINAMIC(OVERRIDE) SI STATIC(OVERLOAD)
+
+    // POLIMORFISM DINAMIC = INTR-O IERARHIE DE CLASE OBTINUTE PRIN MOSTENIRE, O METODA POATE AVEA IMPLEMENTARI DIFERITE
+    // POLIMORFISMUL DINAMIC ESTE PREZENT DOAR LA MOSTENIRE
+
+    // POLIMORFISMUL STATIC = DACA AVEM NEVOIE CA O METODA SA FIE FOLOSITA IN DIFERITE CIRCUMSTANTE, PUTEM DEFINI
+       // MAI MULTE METODE CU ACELASI NUME, AVAND NUMAR DE PARAMETRI/TIP PARAMETRI DIFERITI
+
     public void infoMasina(){
         System.out.println("Marca Masinii este: " + marca);
         System.out.println("Modelul Masinii este: " + model);
         System.out.println("Anul Masinii este: " + an);
+    }
+
+    //POLIMORFISM DINAMIC
+
+    public void pornesteMotor(){
+        System.out.println("Masina se porneste cu ajutorul cheii");
+    }
+
+    public void deschideGeam(){
+        System.out.println("Geamul se deschide manual");
+    }
+
+    //POLIMORFISM STATIC
+
+    public void promotieDacia(){
+        System.out.println("Pentru luna iulie, Dacia nu are promotie");
+    }
+
+    public void promotieDacia(String ticket){
+        System.out.println("Daca ai" + ticket + "rabla, ai promotie");
+    }
+
+    public void promotieDacia(Integer reducere){
+        System.out.println("Daca ai" + reducere + "rabla, ai promotie");
     }
 
     public String getMarca() {
